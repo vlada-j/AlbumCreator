@@ -1,0 +1,22 @@
+{
+  "name": "album-creator",
+  "version": "1.0.0",
+  "description": "Get all images from source folder and make thumbs, copy in 3 different size (for mobiles) and embed logo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlada-j/AlbumCreator.git"
+  },
+  "author": "Vlada Janosevic vladajanosevic@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlada-j/AlbumCreator/issues"
+  },
+  "homepage": "https://github.com/vlada-j/AlbumCreator#readme",
+  "devDependencies": {
+    "jimp": "^0.2.28"
+  }
+}
