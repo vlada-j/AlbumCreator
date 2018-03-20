@@ -8,7 +8,7 @@ var os           = require('os'),
 
 if (argv.h || argv.help) {
 	console.log([
-		'usage: albumcreator [options] [path]',
+		'usage: albumcreator [options]',
 		'',
 		'options:',
 		'  -h --help      Print this list and exit.',
@@ -19,7 +19,7 @@ if (argv.h || argv.help) {
 
 
 if (argv.s || argv.settings) {
-	settings = require('../' + argv.s || argv.settings);
+	settings = require(process.cwd() + '/' + argv.s || argv.settings);
 
 	AlbumCreator(settings);
 }

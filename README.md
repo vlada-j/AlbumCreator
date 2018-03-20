@@ -1,5 +1,5 @@
 # AlbumCreator
-Get all images from source folder and make thumbs, copy in many different size (for mobiles) and embed watermark. Image processing is based on Jimp (https://github.com/oliver-moran/jimp)/
+Get all images from source folder and make thumbs, copy in many different size and embed watermark. Image processing is based on Jimp (https://github.com/oliver-moran/jimp)/
 
 ## Install
 
@@ -15,11 +15,13 @@ Install as a global module
 npm install -g album-creator
 ```
 
-and you can use with 'albumcreator' command
+and you can use with `albumcreator` command
 
 ```sh
 albumcreator -s my-album-settings.json
 ```
+
+If you still want to use locally, then use `node_modules/.bin/albumcreator` instead
 
 ## Usage
 
