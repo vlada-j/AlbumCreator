@@ -1,6 +1,7 @@
 var os				= require('os'),
 	AlbumCreator	= require('../lib/album-creator'),
-    argv			= require('optimist').boolean('cors').argv;
+    argv			= require('optimist').boolean('cors').argv,
+    settings		= {};
 
 
 if (argv.h || argv.help) {
@@ -13,3 +14,9 @@ if (argv.h || argv.help) {
 	process.exit();
 }
 
+
+if (argv.s || argv.settings) {
+	settings = require('../' + argv.s || argv.settings);
+
+	AlbumCreator(settings);
+}
