@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var os           = require('os'),
 	AlbumCreator = require('../lib/album-creator'),
     argv         = require('optimist').boolean('cors').argv,

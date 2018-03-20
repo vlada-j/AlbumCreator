@@ -3,11 +3,16 @@
   "version": "0.3.0",
   "description": "Get all images from source folder and make thumbs, copy in 3 different size (for mobiles) and embed logo",
   "main": "./lib/album-creator",
+  "bin": {
+    "albumcreator": "./bin/runner",
+    "ac": "./bin/runner"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
   "scripts": {
     "start": "node ./bin/runner.js"
-  },
-  "bin": {
-    "albumcreator": "./bin/runner.js"
   },
   "repository": {
     "type": "git",
