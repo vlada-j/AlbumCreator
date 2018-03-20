@@ -1,13 +1,13 @@
 {
   "name": "album-creator",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "Get all images from source folder and make thumbs, copy in 3 different size (for mobiles) and embed logo",
   "main": "./lib/album-creator",
   "scripts": {
     "start": "node ./bin/runner.js"
   },
   "bin": {
-    "ac": "./bin/runner.js"
+    "albumcreator": "./bin/runner.js"
   },
   "repository": {
     "type": "git",

@@ -1,15 +1,16 @@
-var os				= require('os'),
-	AlbumCreator	= require('../lib/album-creator'),
-    argv			= require('optimist').boolean('cors').argv,
-    settings		= {};
+var os           = require('os'),
+	AlbumCreator = require('../lib/album-creator'),
+    argv         = require('optimist').boolean('cors').argv,
+    settings     = {};
 
 
 if (argv.h || argv.help) {
 	console.log([
-		'usage: http-server [path] [options]',
+		'usage: albumcreator [options] [path]',
 		'',
 		'options:',
-		'  -h --help    Print this list and exit.'
+		'  -h --help      Print this list and exit.',
+		'  -s --settings  Path to settings in json file'
 	].join('\n'));
 	process.exit();
 }
