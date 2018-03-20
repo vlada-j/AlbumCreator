@@ -9,6 +9,14 @@ npm install album-creator
 
 ## Usage form command line
 
+Install as a global module
+
+```sh
+npm install -g album-creator
+```
+
+and you can use with 'albumcreator' command
+
 ```sh
 albumcreator -s my-album-settings.json
 ```
@@ -16,7 +24,7 @@ albumcreator -s my-album-settings.json
 ## Usage
 
 ```js
-const AlbumCreator = require('../lib/album-creator');
+const AlbumCreator = require('album-creator');
 
 const settings = {
   dest: "new-album",
